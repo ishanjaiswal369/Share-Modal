@@ -1,0 +1,88 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <link rel="stylesheet" href="style.css">
+    <link
+    href="https://cdn.jsdelivr.net/npm/remixicon@4.1.0/fonts/remixicon.css"
+    rel="stylesheet"
+/>
+</head>
+<body>
+
+    <div class="circle1"></div>
+    <div class="circle2"></div>
+
+    <div class="wrapper">
+        <div class="card-wrapper">
+            <div>
+                <img src="profile.png" alt="">
+            </div>
+            <div class="username">
+                <h2>
+                    Ishan Jaiswal
+                </h2>
+            </div>
+
+            <div class="designation">
+                <h3>
+                    Student, SRMU
+                </h3>
+            </div>
+            <div class="bottom-group">
+                <button   onclick="openModal()" class="btnshare btncard">
+                    <i class="ri-share-forward-line"></i>
+                    <div> Share my Profile</div>
+                </button>
+
+                <button class="btnfollow btncard">
+                    <div>
+                        Follow Me
+                    </div>
+                </button>
+            </div>
+        </div>
+    </div>
+
+    <!-- Modal Component -->
+
+    <div class="modal">
+        <div class="modal-header">
+            <h2>
+                Share My profile
+            </h2>
+
+            <i onclick="closeModal()"  class="ri-close-line"></i>
+        </div>
+
+        <div class="share">
+            Share this via
+        </div>
+
+        <div class="icon-container">
+            <a href="#" class="icon" id="facebook">
+                <i class="ri-facebook-circle-line"></i>
+              </a>
+              <a href="#" class="icon" id="twitter">
+                <i class="ri-twitter-x-fill"></i>
+              </a>
+              <a href="#" class="icon" id="instagram">
+                <i class="ri-instagram-line"></i>
+              </a>
+              <a href="#" class="icon" id="whatsapp">
+                <i class="ri-whatsapp-line"></i>
+              </a>
+              <a href="#" class="icon" id="telegram">
+                <i class="ri-telegram-line"></i>
+              </a>
+        </div>
+    </div>
+
+    <!-- Overlay -->
+
+    <div class="overlay" onclick="closeModal()" ></div>
+    <script src="script.js"></script>
+</body>
+</html>
